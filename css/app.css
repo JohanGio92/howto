@@ -1,0 +1,40 @@
+
+.icon-bar {
+    display: flex;
+    justify-content: flex-start;
+    background-color: gray;
+    width: fit-content;
+}
+
+.icon-bar > a {
+    padding: 2rem;
+    color: black;
+    font-size: 4rem;
+}
+
+.icon-bar > a:hover {
+    background-color: rgb(91, 192, 91);
+}
+
+.active {
+    background-color: green;
+}
+
+.icon-bar-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: gray;
+    width: fit-content;
+}
+
+.icon-bar-vertical a {
+    display: inline-block;
+    padding: 1.9rem;
+    font-size: 4rem;
+    color: black;
+}
+
+.icon-bar-vertical a:hover{
+    background-color: rgb(91, 192, 91);
+}
