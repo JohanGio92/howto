@@ -1,0 +1,33 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.navigator {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: gray;
+    width: fit-content;
+}
+
+.navigator > * {
+    padding: 1rem;
+}
+
+.navigator > *:hover {
+    background-color: rgb(69, 105, 69);
+}
+
+.container-menu-bar {
+    background-color: green;
+    padding: 0.4rem;
+}
+
+.menu-bar {
+    background-color: black;
+    height: 0.4rem;
+    width: 2.2rem;
+    margin: 0.4rem;
+}
