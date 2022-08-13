@@ -1,0 +1,70 @@
+
+.scene {
+    height: 30rem;
+    width: 30rem;
+    margin: 2rem auto;
+    border: solid black 0.1rem;
+    perspective: 60rem;
+    backface-visibility: visible;
+}
+
+.cube {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translateZ(-15rem);
+}
+
+.cube__face {
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+    font-size: 5rem;
+    line-height: 28rem;
+    opacity: 0.5;
+}
+
+.cube__face--front{
+    transform: rotateY(0deg) translateZ(15rem);
+    background-color: red;
+}
+
+.cube__face--back{
+    transform: rotateY(180deg) translateZ(15rem);
+    background-color: blue;
+}
+
+.cube__face--right{
+    transform: rotateY(90deg) translateZ(15rem);
+    background-color: green;
+}
+
+.cube__face--left{
+    transform: rotateY(-90deg) translateZ(15rem);
+    background-color: orange;
+}
+
+.cube__face--top{
+    background-color: blueviolet;
+    transform: rotateX(90deg) translateZ(15rem);
+}
+
+.cube__face--bottom{
+    transform: rotateX(-90deg) translateZ(15rem);
+    background-color: yellow;
+}
+
+.radio-group {
+    width: fit-content;
+    margin: 0 auto;
+    background-color: rebeccapurple;
+    padding: 1.5rem;
+    font-size: 3rem;
+    color: white;
+    border-radius: 1rem;
+    text-transform: capitalize;
+}
