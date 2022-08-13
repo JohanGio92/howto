@@ -1,0 +1,35 @@
+
+.panel-title {
+    background-color: gray;
+    padding: 2rem 1rem;
+    cursor: pointer;
+}
+
+.panel-title:hover{
+    background-color: rgb(191, 187, 187);
+}
+
+.panel-title::after {
+    content: '\0002B'; 
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    float: right;
+}
+
+.panel-description {
+    background-color: antiquewhite;
+    padding: 2rem 1rem;
+    display: none;
+}
+
+.panel_description-visibility {
+    display: block;
+}
+
+.panel_title-active {
+    background-color: rgb(191, 187, 187);
+}
+
+.panel_title-active::after {
+    content: '\2212';
+}
