@@ -1,0 +1,65 @@
+
+.scene {
+    width: 400px;
+    height: 300px;
+    background-image: linear-gradient(135deg, cyan, white, cyan);
+    margin: 0 auto;
+}
+
+.dado {
+    margin: auto;
+    height: 150px;
+    width: 150px;
+    perspective: 600px;
+    transition: transform 2s ease 0.2s;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateY(60px) rotate3d(1, 1, 1, 30deg);
+}
+
+.face {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: inherit;
+    font-size: 60px;
+    color: white;
+}
+
+.face-front {
+    background: rgba(90,90,90,.7);
+    transform: translateZ(75px);
+}
+
+.face-back {
+    background: rgba(0,210,0,.7);
+    transform: rotateY(180deg) translateZ(75px);
+}
+
+.face-right {
+    background: rgba(210,0,0,.7);
+    transform: rotateY(90deg) translateZ(75px);
+}
+
+.face-left {
+    background: rgba(0,0,210,.7);
+    transform: rotateY(-90deg) translateZ(75px);
+}
+
+.face-top {
+    background: rgba(210,210,0,.7);
+    transform: rotateX(90deg) translateZ(75px);
+}
+
+.face-bottom {
+    background: rgba(210,0,210,.7);
+    transform: rotateX(-90deg) translateZ(75px);
+}
+
+.select-form {
+    width: fit-content;
+    margin: 20px auto;
+}
