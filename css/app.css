@@ -2,8 +2,7 @@
 .scene {
     height: 30rem;
     width: 30rem;
-    margin: 2rem auto;
-    border: solid black 0.1rem;
+    margin: 5rem auto;
     perspective: 60rem;
     backface-visibility: visible;
 }
@@ -14,7 +13,15 @@
     width: 100%;
     transform-style: preserve-3d;
     transform: translateZ(-15rem);
+    transition: transform 2s ease 0.5s;
 }
+
+.cube.show-front  { transform: translateZ(-15rem) rotateY(   0deg); }
+.cube.show-right  { transform: translateZ(-15rem) rotateY( -90deg); }
+.cube.show-back   { transform: translateZ(-15rem) rotateY(-180deg); }
+.cube.show-left   { transform: translateZ(-15rem) rotateY(  90deg); }
+.cube.show-top    { transform: translateZ(-15rem) rotateX( -90deg); }
+.cube.show-bottom { transform: translateZ(-15rem) rotateX(  90deg); }
 
 .cube__face {
     position: absolute;
@@ -25,37 +32,37 @@
     font-weight: bolder;
     font-size: 5rem;
     line-height: 28rem;
-    opacity: 0.5;
+    border: solid black 0.5rem;
 }
 
 .cube__face--front{
-    transform: rotateY(0deg) translateZ(15rem);
-    background-color: red;
+    transform: rotateY(0deg) translateZ(14.7rem);
+    background-color: rgb(255, 0, 0, 0.7);
 }
 
 .cube__face--back{
-    transform: rotateY(180deg) translateZ(15rem);
-    background-color: blue;
+    transform: rotateY(180deg) translateZ(14.7rem);
+    background-color: rgb(0, 0, 255, 0.7);
 }
 
 .cube__face--right{
-    transform: rotateY(90deg) translateZ(15rem);
-    background-color: green;
+    transform: rotateY(90deg) translateZ(14.7rem);
+    background-color: rgb(0, 128, 0, 0.7);
 }
 
 .cube__face--left{
-    transform: rotateY(-90deg) translateZ(15rem);
-    background-color: orange;
+    transform: rotateY(-90deg) translateZ(14.7rem);
+    background-color: rgb(255, 165, 0, 0.7);
 }
 
 .cube__face--top{
-    background-color: blueviolet;
-    transform: rotateX(90deg) translateZ(15rem);
+    background-color: rgb(138, 43, 226, 0.7);
+    transform: rotateX(90deg) translateZ(14.7rem);
 }
 
 .cube__face--bottom{
-    transform: rotateX(-90deg) translateZ(15rem);
-    background-color: yellow;
+    transform: rotateX(-90deg) translateZ(14.7rem);
+    background-color: rgb(255, 255, 0, 0.7);
 }
 
 .radio-group {
@@ -68,3 +75,23 @@
     border-radius: 1rem;
     text-transform: capitalize;
 }
+
+
+.escena {
+    display: flex;
+    align-items: center;
+    perspective: 40rem;
+    width: fit-content;
+}
+
+.pinguin {
+    width: 20%;
+    transition: transform 4s ease 1s;
+}
+
+.pinguin:hover {
+    transform: translateX(20rem);
+}
+
+
+
