@@ -10,6 +10,43 @@
     <title>Document</title>
 </head>
 <body>
+
+    <div class="scene">
+        <div class="carrousel">
+            <div class="carrousel__cell">1</div>
+            <div class="carrousel__cell">2</div>
+            <div class="carrousel__cell">3</div>
+            <div class="carrousel__cell">4</div>
+            <div class="carrousel__cell">5</div>
+            <div class="carrousel__cell">6</div>
+            <div class="carrousel__cell">7</div>
+            <div class="carrousel__cell">8</div>
+            <div class="carrousel__cell">9</div>
+            <div class="carrousel__cell">10</div>
+            <div class="carrousel__cell">11</div>
+            <div class="carrousel__cell">12</div>
+            <div class="carrousel__cell">13</div>
+            <div class="carrousel__cell">14</div>
+            <div class="carrousel__cell">15</div>
+        </div>
+    </div>
+    <div class="carrousel__buttons">
+        <input class="previous__button" name="previous" type="button" value="previous">
+        <input class="next__button" name="next" type="button" value="next">
+    </div>
+
+    <div class="carrousel__option">
+        <label for="cell">Cell</label>
+        <input type="range" min="3" max="15" value="9">
+    </div>
+
+    <div class="carrousel__radio">
+        <label for="orientation">Orientation:</label>
+        <label name="orientation" for="orientation">horizontal</label>
+        <input name="orientation" id="orientation" type="radio" value="orientation" checked>
+        <label name="orientatiom" for="vertical">vertical</label>
+        <input name="orientation" id="vertical" type="radio" value="vertical">
+    </div>
     <script src="js/app.js" type="module"></script>
 </body>
 </html>
