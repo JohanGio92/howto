@@ -21,7 +21,7 @@ class Carrousel {
         return `translateZ(${-Carrousel.#RADIUS}rem)`
     }
 
-    getRotation(){
+    getRotationY(){
         return `rotateY(${this.getAngle()}deg)`
     }
 
@@ -35,8 +35,7 @@ class Carrousel {
 
     rotateHandler(rotation){
         this.turn(rotation);
-        console.log(this.getTranslateZ() + " " +this.getRotation());
-        this.carrousel.style.transform = this.getTranslateZ() + " " + this.getRotation();
+        this.carrousel.style.transform = this.getTranslateZ() + " " + this.getRotationY();
     }
 
     execute(){
