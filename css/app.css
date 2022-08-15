@@ -2,12 +2,12 @@
 .scene {
     width: 40rem;
     width: 40rem;
+    border: solid 0.5rem black;
     margin: 2rem auto;
     perspective: 60rem;
 }
 
 .carrousel {
-    border: solid 0.5rem black;
     width: 30rem;
     height: 30rem;
     position: relative;
@@ -17,8 +17,8 @@
 }
 
 .carrousel__cell {
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     position: absolute;
     text-align: center;
     color: white;
