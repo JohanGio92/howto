@@ -1,0 +1,12 @@
+
+section {
+    border: solid 0.1rem black;
+    display: inline-block;
+    padding: 3rem;
+    background: #fff;
+    cursor: pointer;
+}
+
+section:hover {
+    background-color: rebeccapurple;
+}
