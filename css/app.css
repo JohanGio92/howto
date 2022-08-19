@@ -1,0 +1,41 @@
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.verticalTab {
+    display: flex;
+}
+
+.verticalTab_navigation {
+    flex-basis: calc(10% - 0.1rem);
+    background-color: gray;
+}
+
+.verticalTab_navigation ul > li {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.verticalTab_navigation ul > li:hover {
+    background-color: rgb(181, 177, 177);
+}
+
+.verticalTab_contents {
+    flex-basis: calc(90% - 0.1rem);
+    border: solid gray 0.2rem;
+    padding: 1rem;
+}
+
+
+.verticalTab_content {
+    display: none;
+}
+
+.verticalTab_content-active {
+    display: block;
+}
