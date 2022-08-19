@@ -1,0 +1,53 @@
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.4rem;
+    height: 100%;
+}
+
+.topNav {
+    background-color: black;
+    padding: 2rem;
+}
+
+.topNav > * {
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.topNav > *:hover {
+    background-color: gray;
+}
+
+.topNav .active {
+    background-color: greenyellow;
+}
+
+.icon {
+    float: right;
+    color: white;
+    display: none;
+}
+
+@media ( max-width: 480px ){
+    .topNav {
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        padding: 0rem;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+
+    a.icon {
+        display: inline;
+        position: absolute;
+        top: 0rem;
+        right: 0rem;
+        height: fit-content;
+        z-index: 1;
+    }
+}
