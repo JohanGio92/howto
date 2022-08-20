@@ -15,9 +15,13 @@ a{
     position: fixed;
     height: 100%;
     overflow-x: hidden;
-    transition: width 2s ease 0s;
+    transition: width 0.5s ease 0s;
     z-index: 1;
     
+}
+
+#main {
+    transition: margin-left 0.5s ease 0s;
 }
 
 .sideNav > * {
@@ -49,7 +53,7 @@ a{
 .navigation_display {
     background-color: gray;
     display: none;
-    transition: opacity 3s ease-out 0s;
+    transition: display 3s ease-out 0s;
 }
 
 .navigation_display a:hover {
