@@ -1,0 +1,49 @@
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.searchMenu {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.searchMenu_tab {
+    display: flex;
+    flex-direction: column;
+    background-color: burlywood;
+    justify-content: flex-start;
+}
+
+.search {
+    border-style: none;
+    outline: none;
+}
+
+.searchMenu_tab > li, h1 {
+    padding: 1.5rem;
+}
+
+.searchMenu_tab > li:hover {
+    background-color: rgb(240, 210, 167);
+}
+
+.searchMenu_panels {
+    background-color: rgb(214, 212, 189);
+    padding: 1rem;
+}
+
+.searchMenu_panels > div{
+    display: none;
+}
+
+.searchMenu_panels .active {
+    display: block;
+}
