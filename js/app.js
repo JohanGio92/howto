@@ -12,6 +12,13 @@ const openTab = document.querySelector(".navigation_display_content .open");
 const closeBoton = document.querySelector(".navigation_display .closeBoton");
 var navigationDisplay = document.querySelector(".navigation_display");
 
-openTab.addEventListener("click", () => (navigationDisplay.classList.add("active")));
-closeBoton.addEventListener("click", () => (navigationDisplay.classList.remove("active")));
+openTab.addEventListener("click", function() { 
+    navigationDisplay.classList.add("active");
+    navigationDisplay.style.opacity = "1";
+});
+
+closeBoton.addEventListener("click", function() { 
+    navigationDisplay.classList.remove("active");
+    navigationDisplay.style.opacity = "0";
+});
 

@@ -49,6 +49,7 @@ a{
 .navigation_display {
     background-color: gray;
     display: none;
+    transition: opacity 3s ease-out 0s;
 }
 
 .navigation_display a:hover {
@@ -68,5 +69,5 @@ a{
     flex-direction: column;
     width: fit-content;
     transform: translateX(-0.1rem);
-    animation: mover 5 ease 0s;
+    opacity: 1.0;
 }
