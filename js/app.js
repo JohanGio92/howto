@@ -1,4 +1,6 @@
 
+import Modular from "./modular.js";
+import ModularDOM from "./modularDOM.js";
 class SlideShow {
 
     constructor() {
@@ -6,7 +8,10 @@ class SlideShow {
         this.dots = this.querySelector(".slideDot");
         this.slides = this.querySelectorAll(".slide");
 
-        this.cursor = this.dots.firstElementChild;
+        this.slideIterator = new Modular(this.slides);
+        this.dotIterator = new ModularDOM(this.dots);
+
+        this.showSlideHanlder = this.showSlideHanlder.bind(this);
     }
 
     querySelector(selector){
@@ -31,44 +36,22 @@ class SlideShow {
     }
 
     execute(){
-        this.addListeners(this.buttons.children);
-        this.addListeners(this.dots.children);
+        this.clickListeners(this.buttons.children);
+        this.clickListeners(this.dots.children);
     }
 
-    addListeners(iterators){
+    clickListeners(iterators){
         for (const iterator of iterators) {
-            iterator.addEventListener("click", showSlideHanlder);
+            iterator.addEventListener("click", this.showSlideHanlder);
         }
     }
 
     showSlideHanlder(event){
         this.removeClasses();
-    }
-
-    nexts(cursor){
-        if (cursor.nextElementSibling === null) {
-            cursor = cursor.parentElement.firstElementChild;
-        } else {
-            cursor = cursor.nextElementSibling;
-        }
-    }
-
-    printCursor(){
-        console.log(this.cursor)
-    }
-
-    previous(element){
-        return element.previousElementSibling === null
-            ? element.parentElement.lastElementChild
-            : element.previousElementSibling
-    }
-
-    next(element){
-        return element.nextElementSibling === null
-            ? element.parentElement.firstElementChild
-            : element.nextElementSibling
+        this.slideIterator.nextList().classList.add("imgActive");
+        this.dotIterator.nextChild().classList.add("dotActive");
     }
 }
 
 const slideShow = new SlideShow();
-slideShow.printCursor();
+slideShow.execute();
