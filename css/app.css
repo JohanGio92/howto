@@ -1,0 +1,39 @@
+
+h1{
+    color: white;
+    text-shadow: 
+        #FFF 0px 0px 5px,
+        #FFF 0px 0px 10px,
+        #FFF 0px 0px 15px,
+        #FF2D95 0px 0px 20px,
+        #FF2D95 0px 0px 30px;
+    background: #333333;
+}
+
+h2 {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+    
+}
+
+h3 {
+    color: #616161;
+    background: #bababa;
+    text-shadow: #e0e0e0 1px 1px 0;
+    box-shadow: 2rem 2rem 0rem -1rem black;
+    width: fit-content;
+    padding: 1rem;
+    margin: auto;
+}
+
+img {
+    border: solid 0.5rem #008cba80;
+    padding: 0.5rem;
+    width: 50%;
+    margin: auto;
+}
+
+img:hover{
+    box-shadow: 0 0 20px 10px #008cba80;
+}
