@@ -1,0 +1,84 @@
+
+.slides {
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+.activeSlide {
+    display: block;
+    animation: fadeOut 0.8s ease 0s forwards;
+}
+
+@keyframes fadeOut{
+    from { opacity: 0.2;}
+    to { opacity: 1;}
+}
+
+
+.slideNumber {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.previous,
+.next {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 3rem;
+    padding: 1rem;
+    transition: background 0.5s ease 0s;
+    transition: transform 0.5s ease-out 0s;
+}
+
+.previous {
+    right: 0;
+}
+
+.previous:hover {
+    background-color: gray;
+    transform: translateX(0.8rem);
+}
+
+.next:hover {
+    background-color: gray;
+    transform: translateX(-1rem);
+}
+
+.slideCaption {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+.thumbnailImages {
+    display: flex;
+}
+
+.thumbnail {
+    opacity: 0.6;
+    transition: opacity 0.5s ease-out 0s;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
+
+.activeThumbnail {
+    opacity: 1;
+}
+
+img {
+    height: 100%;
+}
+
+
