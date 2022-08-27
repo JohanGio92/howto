@@ -1,0 +1,96 @@
+
+.lightBox {
+    width: 100%;
+    position: relative;
+}
+
+.modals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slidesContainer {
+    position: relative;
+}
+
+.slideImage {
+    display: none;
+}
+
+.slideActive {
+    display: block;
+}
+
+.previous,
+.next {
+    position: absolute;
+    top: 50%;
+    color: white;
+    padding: 1rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.previous{
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.previous:hover,
+.next:hover {
+    background-color: gray;
+}
+
+.slideCaption {
+    background-color: black;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem;
+}
+
+.thumbnails {
+    display: flex;
+}
+
+.thumbnailActive {
+    opacity: 1;
+}
+
+.slideShowGalleryContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: black;
+    padding: 6rem;
+    display: none;
+}
+
+.slideShowGallery {
+    background-color: black;
+    position: relative;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    background-color: gray;
+}
