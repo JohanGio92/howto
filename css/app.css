@@ -1,0 +1,55 @@
+.container {
+    position: relative;
+}
+
+.little {
+    width: 30%;
+    cursor: pointer;
+}
+
+.modal {
+    background-color: rgb(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.display {
+    display: block;
+}
+
+.modal-content {
+    width: 80%;
+    margin: auto;
+    display: block;
+    overflow: auto;
+    animation: zoomIn 1s ease 0s forwards;
+}
+
+.close {
+    display: block;
+    width: 100%;
+    text-align: right;
+    color: white;
+    font-size: 3rem;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.caption {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    animation: zoomIn 2s ease 0s forwards;
+}
+
+@keyframes zoomIn{
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
